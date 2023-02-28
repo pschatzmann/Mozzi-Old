@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "camera": "cpp",
+        "types": "cpp",
+        "thread": "cpp"
+    }
+}

@@ -1,0 +1,14 @@
+version: '3.0'
+services:
+  mozzi:
+    image: pschatzmann/mozzi
+    build: .
+    restart: always
+    ports:
+      - 7890:7890
+    environment:
+      - GRANT_SUDO=yes
+      - PULSE_SERVER=host.docker.internal
+    volumes:
+      - ~/.config/pulse:/root/.config/pulse
+        
